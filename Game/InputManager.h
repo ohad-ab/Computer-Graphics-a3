@@ -14,7 +14,10 @@
 			double x2,y2;
 			glfwGetCursorPos(window,&x2,&y2);
 			if (rndr->Picking((int)x2, (int)y2))
-				rndr->UpdatePosition(x2,y2);
+			{
+				printf("picked\n");
+				rndr->UpdatePosition(x2, y2);
+			}
 		}
 	}
 	
